@@ -79,7 +79,7 @@ the server-side code which resides on the "back end" or server.
 Bootstrap is the most-starred project on GitHub, with over 90K stars and more
 than 38K forks.
 
-[Bootstrap Wiki](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)
+[Bootstrap Wiki](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
 
 
 ## Lab:
