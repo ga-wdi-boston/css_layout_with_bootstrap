@@ -56,7 +56,7 @@ doesn't fill the page.
 Next, try using JavaScript to have the header and footer hide on `scrolldown`
 and display on `scrollup`.
 
-## References
+## Additional Resources
 
 -   [In Search of the Holy Grail · An A List Apart Article](http://alistapart.com/article/holygrail)
 -   [Solving the Holy Grail Layout | appendTo](http://appendto.com/2014/03/solving-the-holy-grail-layout-2/)
