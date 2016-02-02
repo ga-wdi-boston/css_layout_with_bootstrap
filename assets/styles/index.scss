@@ -1,31 +1,7 @@
-$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap';
-
 $background-color: #4e4e4e;
 $font-color: #dfdfdf;
-$blue: #0000ff;
-
-
 
 body {
   background-color: $background-color;
   color: $font-color;
-}
-
-.article {
-  @include make-row();
-
-  p {
-    color: $blue;
-  }
-
-  .main-content {
-    @include make-sm-column(2);
-    @include make-md-column(8);
-  }
-
-  .rightsidebar {
-    @include make-sm-column(10);
-    @include make-md-column(4);
-  }
 }
