@@ -160,6 +160,7 @@ Follow along as I use @mixins to make our grid system more semantic.
 -   [Sitepoint Sass Mixins](http://www.sitepoint.com/5-useful-sass-mixins-bootstrap/)
 -   [Bootstrap Grid Tricks](http://willschenk.com/bootstrap-advanced-grid-tricks/)
 -   [Hongkait Grid Tricks](http://www.hongkiat.com/blog/bootstrap-and-sass/)
+-   [Bootstrap Documentation](http://getbootstrap.com/)
 
 ## [License](LICENSE)
 
