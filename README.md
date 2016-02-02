@@ -79,7 +79,7 @@ template files, so you can just follow along.
     [`index.js`](index.js) since bootstrap already includes its own browser
     reset.
 
-## Lab:
+## Lab: Review Sites Made With Bootstrap
 
 In squads closely inspect the following site list.  Keeping these questions in
 mind please write down your thoughts and we will discuss them as a class.
