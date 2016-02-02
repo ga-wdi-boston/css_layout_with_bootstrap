@@ -19,21 +19,12 @@ By the end of this lesson, students should be able to:
     `bootstrap-sass`.
 -   Reference bootstrap documentation.
 
-## Instructions
+## Preparation
 
-1.  Fork and clone this repo.
-1.  Change into the project directory.
-1.  Follow your instructor's instructions.
+1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+    this repository.
+1.  Install dependencies with `npm install`.
 
-To add bootstrap to an existing project:
-
-1.  `npm install --save bootstrap` to download bootstrap and add it as a
-    dependency.
-1.  Link to bootstrap CSS in `index.html`. Browse `node_modules` for the full
-    path to the stylesheets you want.
-1.  Require the bootstrap JS as part of your `browserify` build.
-1.  Edit your layout (`index.html`) to include appropriate layout elements,
-    including containers, rows, columns, etc.
 
 ## Exercise: Holy Grail Layout
 
