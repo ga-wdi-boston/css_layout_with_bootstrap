@@ -18,6 +18,7 @@ By the end of this lesson, students should be able to:
 -   Maintain semantic HTML markup using Sass mixins provided by
     `bootstrap-sass`.
 -   Reference bootstrap documentation.
+-   Add a modal to a front end project.
 
 ## Preparation
 
@@ -64,46 +65,101 @@ template files, so you can just follow along.
     [`index.js`](index.js) since bootstrap already includes its own browser
     reset.
 
-## Exercise: Holy Grail Layout
+## What is Bootstrap?
 
-The goal of our exercise is to recreate the "Holy Grail" layout. This
-traditional layout is challenging in CSS. It is defined by a set of constraints
-that may be difficult to achieve all at once:
+Bootstrap is a free and open-source collection of tools for creating websites
+and web applications. It contains HTML- and CSS-based design templates for
+typography, forms, buttons, navigation and other interface components, as
+well as optional JavaScript extensions. It aims to ease the development of
+dynamic websites and web applications.
 
-1.  A header, a footer, and a main content area.
-1.  The main content area is divided into left, right, and center columns.
-1.  The left and right columns are "sidebars".
-1.  The middle column is for content.
-1.  Any column should be the "longest" and display without scrollbars, pushing
-    the footer down if necessary.
-1.  The center should be "fluid" and resize with the browser window.
-1.  Columns should remain a fixed width. If the viewport isn't wide enough, the
-    columns should stack below content.
-1.  The middle column should appear first in the source, since early content is
-    ranked higher in importance by search engines.
+Bootstrap is a front end framework, that is, an interface for the user, unlike
+the server-side code which resides on the "back end" or server.
 
-We'll start by including bootstrap and creating our three columns. Then we'll
-proceed by adding a navbar and a footer. Lastly, we'll experiment to see how
-many of the constraints we can meet using built-in bootstrap styling classes.
+Bootstrap is the most-starred project on GitHub, with over 90K stars and more
+than 38K forks.
 
-## Bonus
+[Bootstrap Wiki](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)
 
-For an extra challenge, make the header and footer sticky, even when the content
-doesn't fill the page.
 
-Next, try using JavaScript to have the header and footer hide on `scrolldown`
-and display on `scrollup`.
+## Lab:
 
-## Additional Resources
+In squads closely inspect the following site list.  Keeping these questions in
+mind please write down your thoughts and we will discuss them as a class.
 
--   [In Search of the Holy Grail · An A List Apart Article](http://alistapart.com/article/holygrail)
--   [Solving the Holy Grail Layout | appendTo](http://appendto.com/2014/03/solving-the-holy-grail-layout-2/)
--   [Bootstrap: Template](http://getbootstrap.com/getting-started/#template)
--   [Bootstrap: Examples](http://getbootstrap.com/getting-started/#examples)
--   [Bootstrap: Grid](http://getbootstrap.com/css/#grid)
--   [Bootstrap: CSS](http://getbootstrap.com/css/)
--   [Bootstrap: Components](http://getbootstrap.com/components/)
--   [Bootstrap: JavaScript](http://getbootstrap.com/javascript/)
+1. How are the the pages similar?
+1. How is the HTML similar among the pages?
+1. As you interact with the site how does the DOM change (if at all)?
+1. How are elements on the pages horizontally arranged?
+1. Notice any similarities among bootstrap pages in general?
+
+-   [Divinity in Tech](http://divinityintech.com/)
+-   [UI Viking](http://uiviking.com/)
+-   [MintVine](https://mintvine.com/)
+-   [The Tool Smith](http://thetoolsmith.com/)
+-   [Fansoro](http://fansoro.org/)
+-   [Pave](http://pavingtheway.net/)
+
+## Bootstrap Documentation
+
+For components and jQuery plugins always reference the Bootstrap docs.
+
+ [Bootstrap Documentation](http://getbootstrap.com/)
+
+## Lab: 12 column grid
+
+After we properly install Bootstrap, lets get some firsthand experience writing
+it.  Using the documentation we discussed earlier write a simple grid in the
+`index.html` file located in this repo.  Make use of col-xs, sm, md, lg and xl.
+Try making an evenly spaced 3x3 grid.
+
+- Place your column divs within a row div.
+- Place your row divs within a container div
+- Experiment with various viewport sizes
+
+## Lab: Modals and more
+
+Follow along as I addd a bootstrap modal to our current sandbox page.
+
+On your own:
+
+- Referencing the Bootstrap documentation add an input-group or well to your modal.
+- Using your knowledge of jQuery write a function so that when "save changes" is clicked the input in the well or input group is console logged in Chrome.
+- Refrencing the Bootstrap documentation add a navbar to your page.
+- Move the button that opens up the modal to the navbar.
+
+## Demo: Using bootstrap-sass for semantic naming
+
+Follow along as I use @mixins to make our grid system more semantic.
+
+```
+<div class="container">
+  <div class="row article">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-md-4">.col-md-4</div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="article">
+    <div class="main-content">.col-md-8</div>
+    <div class="right-sidebar">.col-md-4</div>
+  </div>
+</div>
+```
+
+## Lab: Semantic naming
+
+1. Using the code I used above in your `index.scss` file refactor on your own.
+1. Write your own mobile ready page using Bootstrap classes.
+1. Refactor your HTML to be more semantic (copy/paste your previous code and refactor it using bootstrap-sass to make it semantic).
+
+## Useful Resources:
+
+-   [Sitepoint Sass Mixins](http://www.sitepoint.com/5-useful-sass-mixins-bootstrap/)
+-   [Bootstrap Grid Tricks](http://willschenk.com/bootstrap-advanced-grid-tricks/)
+-   [Hongkait Grid Tricks](http://www.hongkiat.com/blog/bootstrap-and-sass/)
 
 ## [License](LICENSE)
 
