@@ -25,6 +25,44 @@ By the end of this lesson, students should be able to:
     this repository.
 1.  Install dependencies with `npm install`.
 
+## Twitter Bootstrap
+
+## Install Bootstrap
+
+We'll use `bootstrap-sass`, the official Sass port of bootstrap. The next major
+version of bootstrap will use Sass by default. For now, using Sass allows us to
+keep our markup clean.
+
+If you're starting a new project, first get a copy of
+[js-template](https://github.com/ga-wdi-boston/js-template). If you're unsure
+how to install the template, see the [installation
+instructions](https://github.com/ga-wdi-boston/js-template-installation).
+
+After you have the initial template files, follow these steps to install
+`bootstrap-sass` into your project. For this talk, we've already installed the
+template files, so you can just follow along.
+
+-   [ ] `npm install --save-dev bootstrap-sass` to download bootstrap and add it
+    as a dependency.
+-   [ ] Add `bootstrap-sass` JS modules as a vendor script inside
+    [`grunt/webpack.js`](grunt/webpack.js).
+
+    ```diff
+    -       vendor: ['jquery'],
+    +       vendor: ['jquery', 'bootstrap-sass'],
+    ```
+
+-   [ ] Register the font path and include the `bootstrap-sass` module in your
+    style manifest.
+
+    ```diff
+    + $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+    + @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+    ```
+
+-   [ ] Remove `normalize.css` from [`package.json`](package.json) and
+    [`index.js`](index.js) since bootstrap already includes its own browser
+    reset.
 
 ## Exercise: Holy Grail Layout
 
