@@ -12,9 +12,12 @@
 
 By the end of this lesson, students should be able to:
 
--   Integrate bootstrap with an existing project.
--   Use bootstrap to create responsive site layouts.
--   Reference bootstrap documentation for existing style class names.
+-   Install `bootstrap-sass` into a front-end project.
+-   Create mobile-first, responsive site layouts using
+    [bootstrap](http://getbootstrap.com).
+-   Maintain semantic HTML markup using Sass mixins provided by
+    `bootstrap-sass`.
+-   Reference bootstrap documentation.
 
 ## Instructions
 
