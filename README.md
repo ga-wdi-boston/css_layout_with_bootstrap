@@ -2,6 +2,12 @@
 
 # CSS: Layout with Bootstrap
 
+## Prequisites
+
+-   [ga-wdi-boston/html-css-layout](https://github.com/ga-wdi-boston/html-css-layout)
+-   [ga-wdi-boston/html-css-sass](https://github.com/ga-wdi-boston/html-css-sass)
+-   [ga-wdi-boston/js-template-installation](https://github.com/ga-wdi-boston/js-template-installation)
+
 ## Objectives
 
 By the end of this lesson, students should be able to:
