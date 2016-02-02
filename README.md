@@ -1,56 +1,111 @@
-![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
+[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 # CSS: Layout with Bootstrap
+
+## Prequisites
+
+-   [ga-wdi-boston/html-css-layout](https://github.com/ga-wdi-boston/html-css-layout)
+-   [ga-wdi-boston/html-css-sass](https://github.com/ga-wdi-boston/html-css-sass)
+-   [ga-wdi-boston/js-template-installation](https://github.com/ga-wdi-boston/js-template-installation)
 
 ## Objectives
 
 By the end of this lesson, students should be able to:
 
-- Integrate bootstrap with an existing project.
-- Use bootstrap to create responsive site layouts.
-- Reference bootstrap documentation for existing style class names.
+-   Install `bootstrap-sass` into a front-end project.
+-   Create mobile-first, responsive site layouts using
+    [bootstrap](http://getbootstrap.com).
+-   Maintain semantic HTML markup using Sass mixins provided by
+    `bootstrap-sass`.
+-   Reference bootstrap documentation.
 
-## Instructions
+## Preparation
 
-1. Fork and clone this repo.
-1. Change into the project directory.
-1. Follow your instructor's instructions.
+1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+    this repository.
+1.  Install dependencies with `npm install`.
 
-To add bootstrap to an existing project:
+## Twitter Bootstrap
 
-1. `npm install --save bootstrap` to download bootstrap and add it as a dependency.
-1. Link to bootstrap CSS in `index.html`. Browse `node_modules` for the full path to the stylesheets you want.
-1. Require the bootstrap JS as part of your `browserify` build.
-1. Edit your layout (`index.html`) to include appropriate layout elements, including containers, rows, columns, etc.
+## Install Bootstrap
+
+We'll use `bootstrap-sass`, the official Sass port of bootstrap. The next major
+version of bootstrap will use Sass by default. For now, using Sass allows us to
+keep our markup clean.
+
+If you're starting a new project, first get a copy of
+[js-template](https://github.com/ga-wdi-boston/js-template). If you're unsure
+how to install the template, see the [installation
+instructions](https://github.com/ga-wdi-boston/js-template-installation).
+
+After you have the initial template files, follow these steps to install
+`bootstrap-sass` into your project. For this talk, we've already installed the
+template files, so you can just follow along.
+
+-   [ ] `npm install --save-dev bootstrap-sass` to download bootstrap and add it
+    as a dependency.
+-   [ ] Add `bootstrap-sass` JS modules as a vendor script inside
+    [`grunt/webpack.js`](grunt/webpack.js).
+
+    ```diff
+    -       vendor: ['jquery'],
+    +       vendor: ['jquery', 'bootstrap-sass'],
+    ```
+
+-   [ ] Register the font path and include the `bootstrap-sass` module in your
+    style manifest.
+
+    ```diff
+    + $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+    + @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+    ```
+
+-   [ ] Remove `normalize.css` from [`package.json`](package.json) and
+    [`index.js`](index.js) since bootstrap already includes its own browser
+    reset.
 
 ## Exercise: Holy Grail Layout
 
-The goal of our exercise is to recreate the "Holy Grail" layout. This traditional layout is challenging in CSS. It is defined by a set of constraints that may be difficult to achieve all at once:
+The goal of our exercise is to recreate the "Holy Grail" layout. This
+traditional layout is challenging in CSS. It is defined by a set of constraints
+that may be difficult to achieve all at once:
 
-1. A header, a footer, and a main content area.
-1. The main content area is divided into left, right, and center columns.
-1. The left and right columns are "sidebars".
-1. The middle column is for content.
-1. Any column should be the "longest" and display without scrollbars, pushing the footer down if necessary.
-1. The center should be "fluid" and resize with the browser window.
-1. Columns should remain a fixed width. If the viewport isn't wide enough, the columns should stack below content.
-1. The middle column should appear first in the source, since early content is ranked higher in importance by search engines.
+1.  A header, a footer, and a main content area.
+1.  The main content area is divided into left, right, and center columns.
+1.  The left and right columns are "sidebars".
+1.  The middle column is for content.
+1.  Any column should be the "longest" and display without scrollbars, pushing
+    the footer down if necessary.
+1.  The center should be "fluid" and resize with the browser window.
+1.  Columns should remain a fixed width. If the viewport isn't wide enough, the
+    columns should stack below content.
+1.  The middle column should appear first in the source, since early content is
+    ranked higher in importance by search engines.
 
-We'll start by including bootstrap and creating our three columns. Then we'll proceed by adding a navbar and a footer. Lastly, we'll experiment to see how many of the constraints we can meet using built-in bootstrap styling classes.
+We'll start by including bootstrap and creating our three columns. Then we'll
+proceed by adding a navbar and a footer. Lastly, we'll experiment to see how
+many of the constraints we can meet using built-in bootstrap styling classes.
 
 ## Bonus
 
-For an extra challenge, make the header and footer sticky, even when the content doesn't fill the page.
+For an extra challenge, make the header and footer sticky, even when the content
+doesn't fill the page.
 
-Next, try using JavaScript to have the header and footer hide on `scrolldown` and display on `scrollup`.
+Next, try using JavaScript to have the header and footer hide on `scrolldown`
+and display on `scrollup`.
 
-## References
+## Additional Resources
 
-- [In Search of the Holy Grail · An A List Apart Article](http://alistapart.com/article/holygrail)
-- [Solving the Holy Grail Layout | appendTo](http://appendto.com/2014/03/solving-the-holy-grail-layout-2/)
-- [Bootstrap: Template](http://getbootstrap.com/getting-started/#template)
-- [Bootstrap: Examples](http://getbootstrap.com/getting-started/#examples)
-- [Bootstrap: Grid](http://getbootstrap.com/css/#grid)
-- [Bootstrap: CSS](http://getbootstrap.com/css/)
-- [Bootstrap: Components](http://getbootstrap.com/components/)
-- [Bootstrap: JavaScript](http://getbootstrap.com/javascript/)
+-   [In Search of the Holy Grail · An A List Apart Article](http://alistapart.com/article/holygrail)
+-   [Solving the Holy Grail Layout | appendTo](http://appendto.com/2014/03/solving-the-holy-grail-layout-2/)
+-   [Bootstrap: Template](http://getbootstrap.com/getting-started/#template)
+-   [Bootstrap: Examples](http://getbootstrap.com/getting-started/#examples)
+-   [Bootstrap: Grid](http://getbootstrap.com/css/#grid)
+-   [Bootstrap: CSS](http://getbootstrap.com/css/)
+-   [Bootstrap: Components](http://getbootstrap.com/components/)
+-   [Bootstrap: JavaScript](http://getbootstrap.com/javascript/)
+
+## [License](LICENSE)
+
+Source code distributed under the MIT license. Text and other assets copyright
+General Assembly, Inc., all rights reserved.
