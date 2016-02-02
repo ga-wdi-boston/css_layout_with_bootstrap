@@ -28,6 +28,20 @@ By the end of this lesson, students should be able to:
 
 ## Twitter Bootstrap
 
+Bootstrap is a free and open-source collection of tools for creating websites
+and web applications. It contains HTML- and CSS-based design templates for
+typography, forms, buttons, navigation and other interface components, as
+well as optional JavaScript extensions. It aims to ease the development of
+dynamic websites and web applications.
+
+Bootstrap is a front end framework, that is, an interface for the user, unlike
+the server-side code which resides on the "back end" or server.
+
+Bootstrap is the most-starred project on GitHub, with over 90K stars and more
+than 38K forks.
+
+[Bootstrap Wiki](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+
 ## Install Bootstrap
 
 We'll use `bootstrap-sass`, the official Sass port of bootstrap. The next major
@@ -64,23 +78,6 @@ template files, so you can just follow along.
 -   [ ] Remove `normalize.css` from [`package.json`](package.json) and
     [`index.js`](index.js) since bootstrap already includes its own browser
     reset.
-
-## What is Bootstrap?
-
-Bootstrap is a free and open-source collection of tools for creating websites
-and web applications. It contains HTML- and CSS-based design templates for
-typography, forms, buttons, navigation and other interface components, as
-well as optional JavaScript extensions. It aims to ease the development of
-dynamic websites and web applications.
-
-Bootstrap is a front end framework, that is, an interface for the user, unlike
-the server-side code which resides on the "back end" or server.
-
-Bootstrap is the most-starred project on GitHub, with over 90K stars and more
-than 38K forks.
-
-[Bootstrap Wiki](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
-
 
 ## Lab:
 
