@@ -5,6 +5,11 @@ const config = require('./config');
 
 $(() => {
   setAPIOrigin(location, config);
+  $("form").on("submit", function(event){
+    event.preventDefault();
+    let input = $("#name").val();
+    console.log(input);
+  });
 });
 
 // use require with a reference to bundle the file and use it in this file
