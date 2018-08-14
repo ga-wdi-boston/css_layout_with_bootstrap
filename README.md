@@ -48,7 +48,7 @@ a table. In each row, Bootstrap utilizes a 12 column system.
 In squads closely inspect the following site list.  Keeping these questions in
 mind please write down your thoughts and we will discuss them as a class.
 
-1.  How are the the pages similar?
+1.  How are the pages similar?
 
 1.  How is the HTML similar among the pages?
 
